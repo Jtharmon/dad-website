@@ -69,23 +69,28 @@ body, html {
       <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about me!</a></p>
     </div> 
     <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <a href="https://www.facebook.com/harmonms" target="_blank" class="w3-hover-opacity"><i class="fa fa-facebook-official"></i></a>
+      <!-- <a href="https://www.instagram.com/your-profile" target="_blank" class="w3-hover-opacity"><i class="fa fa-instagram"></i></a> -->
+      <a href="https://twitter.com/DocHarmon" target="_blank" class="w3-hover-opacity"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/matthew-harmon-a7b31520/" target="_blank" class="w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
     </div>
-  </header>
+      </header>
   
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center">About me</h3>
   <p class="w3-center w3-large">Check out what I do!</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    I am the 2nd best ping pong player in the family
+  <div class="w3-row-padding w3-center" style="margin-top:50px">
+    <div class="w3-container" style="max-width: 800px; margin: 0 auto;">
+      <p style="font-size: 18px; line-height: 1.6; text-align: center;">
+        Matthew S. Harmon (PhD, Wheaton College) is professor of New Testament Studies at Grace College and Theological Seminary in Winona Lake, Indiana. 
+        He was previously on staff with Cru for eight years and is the author of numerous books, 
+        including commentaries on Galatians, Philippians, 2 Peter, and Jude. He also cohosts the Various and Sundry podcast. 
+        Matthew and his wife, Kate, live in Warsaw, Indiana, and have two sons.
+      </p>
+    </div>
   </div>
-</div>
+  </div>
 
 <!-- Promo Section - "We know design" -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
@@ -101,7 +106,7 @@ body, html {
   </div>
 </div>
 
-<!-- Team Section -->
+<!-- Podcast Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 class="w3-center">My PODCASTS</h3>
   <p class="w3-center w3-large">Find on Amazon or Crossway Bookstore</p>
@@ -181,38 +186,137 @@ body, html {
   </div>
 </div> -->
 
-<!-- Work Section -->
+<!-- Book Section -->
 <div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">MY BOOKS</h3>
   <p class="w3-center w3-large">Below are some books that I have published. Check them out by clicking one!</p>
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-        <div class="w3-card">
-          <img src="img/rebels-and-exiles.jpg" style="width:100%" onclick="toggleBio()" class="w3-hover-opacity" alt="rebels-and-exiles">
-          <div id="bio" style="display:none;">
-            <div class="w3-container">
-              <h3>Bio Section Title</h3>
-              <p>This is the bio section content. You can include any information you want here.</p>
-              <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://example.com'">Visit Website</button></p>
-            </div>
+      <div class="w3-card">
+        <img src="img/rebels-and-exiles.jpg" style="width:100%; height:500px;" onclick="toggleBio('bio1')" class="w3-hover-opacity" alt="rebels-and-exiles">
+        <div id="bio1" style="display:none;">
+          <div class="w3-container">
+            <h3>Rebels and Exiles</h3>
+            <p>In this ESBT volume, Matthew S. Harmon explores how the theme of sin and exile is developed throughout Scripture. He traces a common pattern of human rebellion, God's judgment, and the hope of restored relationship, beginning with the first humans and concluding with the end of exile in a new creation. In this story we encounter the remarkable grace of a God who wants to dwell with his people, and we learn how to live well as exiles in a fallen world. Rebels and Exiles makes clear how the paradigm of sin leading to exile is foundational for understanding both the biblical storyline and human existence.</p>
+            <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://www.amazon.com/Rebels-Exiles-Biblical-Restoration-Essential/dp/0830855416/ref=sr_1_1?crid=23NWBSFKA31LR&dib=eyJ2IjoiMSJ9.pAKCglhCwWlyks6VRxMyl7rhvU_iPPFp6jYUTZLk94pwAGytLDuFQAYwCjfoX-X79S3hCfPLG4UsOEK1sZTqiLE02mPYh3AA7sj99kl8czFEujn7YBUwgLObZDF3akPl4zK92EWo2XHzvug7aMigFeXQxfDuMFrQc8BSoznm7jEVHbvdLnFrVodGjECyA_bJTMpwdMDHzHpZ44RUKAJmp3cHAyin9Wso0huZ-3i3FDY.BxOHEkpCXn_2fZ21pSZnwQ9jqD3qGcv-LGi-0erPyWw&dib_tag=se&keywords=rebels+and+exiles&qid=1712948322&sprefix=rebels+and+e%2Caps%2C134&sr=8-1'">Buy On Amazon</button></p>
           </div>
         </div>
       </div>
-      
-      <script>
-        function toggleBio() {
-          var bio = document.getElementById("bio");
-          if (bio.style.display === "none") {
-            bio.style.display = "block";
-          } else {
-            bio.style.display = "none";
-          }
-        }
-      </script>
-          <div class="w3-col l3 m6">
+    </div>
+  
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="img/galations-evangelical-biblical-theology.jpg" style="width:100%; height:500px;" onclick="toggleBio('bio2')" class="w3-hover-opacity" alt="galations-evangelical-biblical-theology">
+        <div id="bio2" style="display:none;">
+          <div class="w3-container">
+            <h3>Galatians: Evangelical Biblical Theology Commentary (EBTC)</h3>
+            <p>Matthew S. Harmon traces the argument of Paul's most polemic letter. In Galatians, Paul defends his authority and attacks his opponents' arguments―and in both cases, the decisive factor is the Gospel. History and Scripture must be interpreted in light of Christ's arrival. The new creation has broken in, leaving nothing unaltered. Harmon plumbs Galatians' theological depth, including its view of sin and exile, apocalyptic antitheses, the Trinity, Isaiah's servant figure, the law, righteousness,and faith(fulness).</p>
+            <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://www.amazon.com/Galatians-Evangelical-Biblical-Theology-Commentary/dp/1683595637'">Buy On Amazon</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Repeat the above section for additional sections -->
+    
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="img/another-image.jpg" style="width:100%; height:200px;" onclick="toggleBio('bio3')" class="w3-hover-opacity" alt="another-image">
+        <div id="bio3" style="display:none;">
+          <div class="w3-container">
+            <h3>Title 3</h3>
+            <p>Description 3</p>
+            <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://www.example.com'">Buy On Amazon</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="img/another-image.jpg" style="width:100%; height:200px;" onclick="toggleBio('bio3')" class="w3-hover-opacity" alt="another-image">
+        <div id="bio3" style="display:none;">
+          <div class="w3-container">
+            <h3>Title 4</h3>
+            <p>Description 3</p>
+            <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://www.example.com'">Buy On Amazon</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="img/another-image.jpg" style="width:100%; height:200px;" onclick="toggleBio('bio3')" class="w3-hover-opacity" alt="another-image">
+        <div id="bio3" style="display:none;">
+          <div class="w3-container">
+            <h3>Title 5</h3>
+            <p>Description 3</p>
+            <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://www.example.com'">Buy On Amazon</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="img/another-image.jpg" style="width:100%; height:200px;" onclick="toggleBio('bio3')" class="w3-hover-opacity" alt="another-image">
+        <div id="bio3" style="display:none;">
+          <div class="w3-container">
+            <h3>Title 6</h3>
+            <p>Description 3</p>
+            <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://www.example.com'">Buy On Amazon</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="img/another-image.jpg" style="width:100%; height:200px;" onclick="toggleBio('bio3')" class="w3-hover-opacity" alt="another-image">
+        <div id="bio3" style="display:none;">
+          <div class="w3-container">
+            <h3>Title 7</h3>
+            <p>Description 3</p>
+            <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://www.example.com'">Buy On Amazon</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="img/another-image.jpg" style="width:100%; height:200px;" onclick="toggleBio('bio3')" class="w3-hover-opacity" alt="another-image">
+        <div id="bio3" style="display:none;">
+          <div class="w3-container">
+            <h3>Title 8</h3>
+            <p>Description 3</p>
+            <p><button class="w3-button w3-light-grey" onclick="window.location.href='https://www.example.com'">Buy On Amazon</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the above section for additional sections -->
+  
+  </div>
+  
+  <script>
+    function toggleBio(id) {
+      var bio = document.getElementById(id);
+      if (bio.style.display === "none") {
+        bio.style.display = "block";
+      } else {
+        bio.style.display = "none";
+      }
+    }
+  </script>      
+    
+    <div class="w3-col l3 m6">
       <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
     </div>
+    
     <div class="w3-col l3 m6">
       <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
     </div>
@@ -273,9 +377,9 @@ body, html {
   </div>
 </div>
 
-<!-- Pricing Section -->
+<!-- Sermons Section -->
 <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>PRICING</h3>
+  <h3>SERMONS</h3>
   <p class="w3-large">Choose a pricing plan that fits your needs.</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-third w3-section">
@@ -334,9 +438,8 @@ body, html {
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Warsaw, IN</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: Harmon.ms@grace.edu</p>
     <br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
@@ -350,7 +453,7 @@ body, html {
       </p>
     </form>
     <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    <img src="img/placeholder.jpeg" class="w3-image w3-greyscale" style="width:20%;margin-top:48px">
   </div>
 </div>
 
@@ -358,16 +461,13 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <a href="https://www.facebook.com/harmonms" target="_blank" class="w3-hover-opacity"><i class="fa fa-facebook-official"></i></a>
+    <!-- <a href="https://www.instagram.com/your-profile" target="_blank" class="w3-hover-opacity"><i class="fa fa-instagram"></i></a> -->
+    <a href="https://twitter.com/DocHarmon" target="_blank" class="w3-hover-opacity"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/matthew-harmon-a7b31520/" target="_blank" class="w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
+    </div>
 </footer>
- 
+
 <script>
 // Modal Image Gallery
 function onClick(element) {
