@@ -32,16 +32,20 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+  <div class="w3-bar w3-white w3-card" id="myNavbar" style="display: flex; align-items: center; justify-content: space-between;">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 0; margin-right: auto;">
+      <img src="/img/dad-logo.png" alt="Logo" style="height: 40px;">
+    </a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
+    <div class="w3-right w3-hide-small" style="display: flex; align-items: center;">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PODCASTS</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BOOKS</a>
       <a href="#book" class="w3-bar-item w3-button"><i class="fa fa-book"></i> SERMONS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
+  </div>
+</div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -188,7 +192,7 @@ body, html {
 <!-- Book Section -->
 <div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">MY BOOKS</h3>
-  <p class="w3-center w3-large">Below are some books that I have had published. These can be purchased on Amazon or Crossway. Check them out by clicking one! </p>
+  <p class="w3-center w3-large">Below are some books that I have had written. These can be purchased on Amazon or Crossway. Check them out by clicking one! </p>
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
