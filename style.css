@@ -1,0 +1,387 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .w3-top {
+    z-index: 1;
+  }
+  
+  /* Navbar */
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  
+  .w3-bar-item.w3-button {
+    text-align: center;
+  }
+  
+  .w3-bar-item.w3-button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Full Height Image Header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    position: relative;
+  }
+  
+  .w3-display-container {
+    position: relative;
+    height: 100%;
+  }
+  
+  .w3-display-left {
+    padding: 48px;
+    color: white;
+  }
+  
+  .w3-display-bottomleft {
+    padding: 24px 48px;
+  }
+  
+  /* Header Text */
+  .w3-jumbo {
+    font-size: 4rem;
+  }
+  
+  .w3-large {
+    font-size: 1.2rem;
+  }
+  
+  /* About Section */
+  .w3-container {
+    padding: 64px 16px;
+  }
+  
+  .w3-center {
+    text-align: center;
+  }
+  
+  .w3-row-padding {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .w3-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Podcast Section */
+  .w3-row-padding.w3-grayscale {
+    margin-top: 16px;
+  }
+  
+  .w3-col {
+    padding: 0 16px;
+  }
+  
+  .w3-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .w3-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .w3-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .w3-container h3 {
+    margin: 0;
+  }
+  
+  .w3-button {
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .w3-button:hover {
+    background-color: #45a049;
+  }
+  
+  .w3-row-padding {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Book Section */
+  .w3-container#w3-work {
+    padding: 64px 16px;
+    text-align: center;
+  }
+  
+  .w3-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 128px;
+    flex-wrap: wrap;
+  }
+  
+  .w3-row img {
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  
+  .w3-row h3 {
+    margin-top: 16px;
+  }
+  
+  .w3-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .w3-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Book Item Style */
+  .book-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .book-content {
+    padding: 15px;
+  }
+  
+  .book-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .book-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .book-content a {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .book-content a:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Layout Adjustments */
+  @media (max-width: 768px) {
+    .w3-container p {
+      font-size: 0.85rem;
+    }
+  
+    .w3-container img {
+      max-width: 100%;
+    }
+  
+    .book-content a {
+      padding: 8px 12px;
+    }
+  
+    .w3-bar-item.w3-button {
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .book-item {
+      flex-direction: column;
+    }
+  
+    .w3-row {
+      flex-direction: column;
+      gap: 64px;
+    }
+  }
+  
+  .w3-sidebar {
+    display: none;
+  }
+  
+  /* Modal Image */
+  .w3-modal-content img {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  /* Sermons Section */
+  .w3-container#w3-book {
+    padding: 128px 16px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .w3-button.w3-light-grey {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
+  
+  .w3-third img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Book Section */
+  .books-section {
+    padding: 64px 16px;
+  }
+
+  .books-section h3 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .book-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .book-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .book-content {
+    padding: 15px;
+  }
+
+  .book-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+  }
+
+  .book-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .book-content a {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .book-content a:hover {
+    background-color: #45a049;
+  }
+
+  /* Responsive Layout Adjustments */
+  @media (max-width: 768px) {
+    .book-content p {
+      font-size: 0.85rem;
+    }
+
+    .book-content a {
+      padding: 8px 12px;
+    }
+  }
+
