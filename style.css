@@ -87,3 +87,33 @@ body {
   }
 }
 
+/* CSS for Flex Grid in Books Section */
+#work .w3-row-padding {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjusts spacing between items */
+  justify-content: center; /* Centers items on larger screens */
+}
+
+#work .w3-col {
+  flex: 1 1 calc(33.333% - 32px); /* Three items per row with spacing */
+  max-width: calc(33.333% - 32px);
+  box-sizing: border-box; /* Ensures padding/border does not affect width */
+  display: flex;
+  justify-content: center;
+}
+
+#work .w3-card {
+  width: 100%; /* Ensure cards span the full width of their container */
+  border: 1px solid #ccc; /* Adds a border around the card */
+  border-radius: 8px; /* Optional for rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+/* Stack items on smaller screens */
+@media (max-width: 768px) {
+  #work .w3-col {
+    flex: 1 1 100%; /* Full width for smaller screens */
+    max-width: 100%;
+  }
+}

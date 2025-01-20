@@ -50,17 +50,48 @@
       color: #000;
     }
 
-    @media (max-width: 768px) {
-      header .w3-jumbo {
-        font-size: 36px;
-      }
+    #work .w3-row-padding {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
 
-      header .w3-large {
-        font-size: 18px;
+    #work .w3-col {
+      flex: 1 1 calc(33.333% - 32px);
+      max-width: calc(33.333% - 32px);
+      box-sizing: border-box;
+    }
+
+    #work .w3-card {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      #work .w3-col {
+        flex: 1 1 100%;
+        max-width: 100%;
       }
     }
-  </style>
-</head>
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+      #work .w3-col {
+        flex: 1 1 calc(50% - 32px);
+        max-width: calc(50% - 32px);
+      }
+    }
+
+    @media (max-width: 1200px) and (min-width: 1025px) {
+      #work .w3-col {
+        flex: 1 1 calc(25% - 32px);
+        max-width: calc(25% - 32px);
+      }
+    }
+
+  </style></head>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -211,6 +242,11 @@
   </div>      
       </div>
   </div>
+
+  <!-- longer list of books -->
+<div class="w3-center" style="margin-top: 64px; margin-bottom: 64px;">
+  <a href="more-books.html" class="w3-button w3-light-grey" style="padding: 16px 32px; font-size: 18px;">Click Here to See More Books!</a>
+</div>
   
   <!-- Sermons Section -->
   <div class="w3-container" style="padding:64px 16px" id="book">
