@@ -314,3 +314,53 @@ body {
 #sermons .sermon-content a:hover {
   background-color: #45a049;
 }
+
+/* Sermons Section */
+#sermons .sermons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust spacing between sermon items */
+  justify-content: left; /* Aligns items on larger screens */
+}
+
+#sermons .sermon-item {
+  flex: 1 1 calc(33.333% - 32px); /* Three items per row with spacing */
+  max-width: calc(33.333% - 32px);
+  box-sizing: border-box; /* Ensures padding/border does not affect width */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#sermons .sermon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#sermons .sermon-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd; /* Border between image and content */
+}
+
+#sermons .sermon-item h3 {
+  font-size: 1.2rem;
+  margin: 15px 15px 10px;
+  text-align: center;
+}
+
+#sermons .sermon-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 15px 15px;
+  text-align: center;
+}
+
+/* Stack sermon items on smaller screens */
+@media (max-width: 768px) {
+  #sermons .sermon-item {
+    flex: 1 1 100%; /* Full width for smaller screens */
+    max-width: 100%;
+  }
+}

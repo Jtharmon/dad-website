@@ -22,7 +22,7 @@
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PODCASTS</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BOOKS</a>
-      <a href="#book" class="w3-bar-item w3-button"><i class="fa fa-book"></i> SERMONS</a>
+      <a href="#sermons" class="w3-bar-item w3-button"><i class="fa fa-book"></i> SERMONS</a>
     </div>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
@@ -36,7 +36,7 @@
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PODCASTS</a>
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">BOOKS</a>
-  <a href="#book" onclick="w3_close()" class="w3-bar-item w3-button">SERMONS</a>
+  <a href="#sermons" onclick="w3_close()" class="w3-bar-item w3-button">SERMONS</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -152,35 +152,29 @@
 </div>
   
   <!-- Sermons Section -->
-  <div class="w3-container" style="padding:64px 16px" id="sermon">
-    <h3 class="w3-center">My SERMONS</h3>
-    <p class="w3-center w3-large">Preaching God's Word with clarity and conviction.</p>
-    <div class="w3-row-padding w3-grayscale" style="margin-top:32px;">
-      <div class="w3-col l4 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <a href="https://www.youtube.com/live/QwaYaFUyLko?si=JwamJuiYb-vJYp0M&t=913" target="_blank">
-            <img src="img/Grace logo.jpeg" alt="Sermon 1" style="width:100%">
-          </a>
-          <div class="w3-container">
-            <h3>Humility Reigns</h3>
-            <p class="w3-opacity">Series on 1 & 2 Samuel</p>
-            <p>A deep dive into the book of 1 & 2 Samuel, exploring its profound theological truths.</p>
-          </div>
-        </div>
-                </div>
-      </div>
-      <div class="w3-col l4 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <a href="https://www.christscovenant.org/sermons/whose-name-will-it-be" target="_blank">
-            <img src="img/whose-name-will-it-be.jpeg" alt="Sermon 2" style="width:100%">
-          </a>
-          <div class="w3-container">
-            <h3>Whose Name Will It Be</h3>
-            <p class="w3-opacity">Understanding Romans</p>
-            <p>Exploring the richness of the Romans and its application to our daily life.</p>
-          </div>
-                  </div>
-      </div>
+<!-- Sermons Section -->
+<div class="w3-container" style="padding:64px 16px" id="sermons">
+  <h3 class="w3-center">My Sermons</h3>
+  <p class="w3-center w3-large">Preaching God's Word with clarity and conviction.</p>
+  <div class="sermons-grid">
+    <div class="sermon-item">
+      <a href="https://www.youtube.com/live/QwaYaFUyLko?si=JwamJuiYb-vJYp0M&t=913" target="_blank">
+        <img src="img/Grace logo.jpeg" alt="Humility Reigns">
+      </a>
+      <h3>Humility Reigns</h3>
+      <p>Series on 1 & 2 Samuel</p>
+      <p>A deep dive into the book of 1 & 2 Samuel, exploring its profound theological truths.</p>
+    </div>
+    <div class="sermon-item">
+      <a href="https://www.christscovenant.org/sermons/whose-name-will-it-be" target="_blank">
+        <img src="img/whose-name-will-it-be.jpeg" alt="Whose Name Will It Be">
+      </a>
+      <h3>Whose Name Will It Be</h3>
+      <p>Understanding Romans</p>
+      <p>Exploring the richness of the Romans and its application to our daily life.</p>
+    </div>
+  </div>
+</div>
       <!-- <div class="w3-col l4 m6 w3-margin-bottom">
         <div class="w3-card">
           <img src="img/sermon3.jpg" alt="Sermon 3" style="width:100%">
@@ -196,7 +190,7 @@
   
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64">
-    <p>Website by Dr. Matthew Harmon © <script>document.write(new Date().getFullYear());</script></p>
+    <p>Website created by Harmonix Websolutions © <script>document.write(new Date().getFullYear());</script></p>
   </footer>
   
   <script>
