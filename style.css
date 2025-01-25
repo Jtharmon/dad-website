@@ -240,3 +240,77 @@ body {
 .book-content a:hover {
   background-color: #45a049;
 }
+
+
+/* Sermon Section */
+#sermons .w3-row-padding {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjusts spacing between items */
+  justify-content: left; /* Aligns items on larger screens */
+}
+
+#sermons .w3-col {
+  flex: 1 1 calc(33.333% - 32px); /* Three items per row with spacing */
+  max-width: calc(33.333% - 32px);
+  box-sizing: border-box; /* Ensures padding/border does not affect width */
+  display: flex;
+  justify-content: left;
+}
+
+#sermons .w3-card {
+  width: 100%; /* Ensure cards span the full width of their container */
+  border: 1px solid #ccc; /* Adds a border around the card */
+  border-radius: 8px; /* Optional for rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#sermons .w3-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Stack items on smaller screens */
+@media (max-width: 768px) {
+  #sermons .w3-col {
+    flex: 1 1 100%; /* Full width for smaller screens */
+    max-width: 100%;
+  }
+}
+
+#sermons .sermon-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;  /* Optional: adds a border between image and text */
+}
+
+#sermons .sermon-content {
+  padding: 15px;
+  text-align: center;
+}
+
+#sermons .sermon-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+#sermons .sermon-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+#sermons .sermon-content a {
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+}
+
+#sermons .sermon-content a:hover {
+  background-color: #45a049;
+}
