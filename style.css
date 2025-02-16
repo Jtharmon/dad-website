@@ -91,7 +91,7 @@ body {
 #work .w3-row-padding {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Adjusts spacing between items */
+  gap: 1px; /* Adjusts spacing between items */
   justify-content: left; /* Centers items on larger screens */
 }
 
@@ -242,78 +242,6 @@ body {
 }
 
 
-/* Sermon Section */
-#sermons .w3-row-padding {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px; /* Adjusts spacing between items */
-  justify-content: left; /* Aligns items on larger screens */
-}
-
-#sermons .w3-col {
-  flex: 1 1 calc(33.333% - 32px); /* Three items per row with spacing */
-  max-width: calc(33.333% - 32px);
-  box-sizing: border-box; /* Ensures padding/border does not affect width */
-  display: flex;
-  justify-content: left;
-}
-
-#sermons .w3-card {
-  width: 100%; /* Ensure cards span the full width of their container */
-  border: 1px solid #ccc; /* Adds a border around the card */
-  border-radius: 8px; /* Optional for rounded corners */
-  overflow: hidden; /* Ensures content doesn't overflow */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#sermons .w3-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Stack items on smaller screens */
-@media (max-width: 768px) {
-  #sermons .w3-col {
-    flex: 1 1 100%; /* Full width for smaller screens */
-    max-width: 100%;
-  }
-}
-
-#sermons .sermon-item img {
-  width: 100%;
-  height: auto;
-  border-bottom: 2px solid #ddd;  /* Optional: adds a border between image and text */
-}
-
-#sermons .sermon-content {
-  padding: 15px;
-  text-align: center;
-}
-
-#sermons .sermon-content h3 {
-  margin: 0 0 10px;
-  font-size: 1.2rem;
-}
-
-#sermons .sermon-content p {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-#sermons .sermon-content a {
-  text-decoration: none;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  text-align: center;
-  display: inline-block;
-}
-
-#sermons .sermon-content a:hover {
-  background-color: #45a049;
-}
 
 /* Sermons Section */
 #sermons .sermons-grid {
@@ -362,5 +290,103 @@ body {
   #sermons .sermon-item {
     flex: 1 1 100%; /* Full width for smaller screens */
     max-width: 100%;
+  }
+}
+
+/* Articles Section */
+#articles {
+  padding: 64px 16px;
+}
+
+#articles h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#articles p {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 32px;
+}
+
+/* Articles Grid */
+.articles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.article-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 32px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-item:hover {
+  transform: translateY(-5px);
+}
+
+.article-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article-item h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.article-item p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.article-item a {
+  text-decoration: none;
+}
+
+/* See More Button */
+.w3-center {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.w3-center .w3-button {
+  padding: 16px 32px;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #d3d3d3;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.w3-center .w3-button:hover {
+  background-color: #a3a3a3;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .articles-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .article-item {
+    width: 100%;
   }
 }

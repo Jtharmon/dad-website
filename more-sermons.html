@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More Books</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .header img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .home-button:hover {
+      background-color: #ff0000;
+    }
+
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .book-item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Ensures content aligns without gaps */
+      transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .book-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .book-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .book-content {
+      padding: 15px;
+    }
+
+    .book-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .book-content p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .book-content a {
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 4px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .book-content a:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <!-- Cover Photo -->
+    <img src="img/library.jpg" alt="Cover Photo">
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">Home</a>
+    <!-- Header Text -->
+    <div class="header-content">
+      <h1>Explore More Sermons</h1>
+      <p>Discover more of my works below. Click on a book to learn more or purchase it!</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="books-grid">
+      <!-- Book 1 -->
+      <div class="book-item">
+        <img src="img/the-god-who-judges-and-saves.jpg" alt="The God Who Judges and Saves">
+        <div class="book-content">
+          <h3>The God Who Judges and Saves</h3>
+          <p>
+            Even though Peter and Jude wrote their canonical letters almost 2,000 years ago, the church today still faces similar challenges as their original readers. 
+            What do these short, overlooked books have to teach Christians today about God, humanity, and God’s redemptive plan?
+          </p>
+          <p>
+            In this addition to the New Testament Theology series, Matthew S. Harmon examines the unique themes of 2 Peter and Jude as well as their common ground, 
+            addressing topics such as false teaching, God’s authority, and the new heavens and the new earth. Analyzing the historical and biblical context of both books, 
+            Harmon helps readers understand how these key themes apply to them today—giving Christians comfort and motivation in the face of serious challenges 
+            and opposition to the gospel.
+          </p>
+          <a href="https://www.amazon.com" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+            
+      <!-- Book 2 -->
+      <div class="book-item">
+        <img src="img/servant-of-the-lord.jpg" alt="Book 2">
+        <div class="book-content">
+          <h3>Servant Of The Lord</h3>
+          <p>It is often recognized that the title "servant" is applied to key figures throughout the Bible, 
+            culminating in Jesus Christ. In this New Studies in Biblical Theology volume Matthew Harmon carefully traces 
+            this theme from Genesis to Revelation with the intention of seeing how earlier servants point forward to the 
+            ultimate Servant. While this servant theme certainly is significant in its own right throughout redemptive history,
+             it also plays a supporting role, enhancing and enriching other themes such as son, prophet, and king.
+
+            Harmon shows how the title "servant" not only gives us a clearer understanding of Jesus Christ but also has profound 
+            implications for our lives as Christians. When we grasp what it means to be servants of Christ, our love for him and 
+            our obedience to him deepen. Understanding that the ultimate Servant Jesus Christ indwells his people to empower them to 
+            serve others in love has the potential to transform how we interact with fellow believers and the world around us.
+            
+            Addressing key issues in biblical theology, the works comprising New Studies in Biblical Theology are creative attempts 
+            to help Christians better understand their Bibles. The NSBT series is edited by D. A. Carson, aiming to simultaneously 
+            instruct and to edify, to interact with current scholarship and to point the way ahead.</p>
+          <a href="https://www.amazon.com/Servant-Lord-His-People-Biblical-ebook/dp/B08JGM5389?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.6R4LdHY2K-dIzQf9Qjk3zMNwD1-p7-v-62mqXDKWC5cCGE6QfzRw-jei6dgzSy0iqWLCrxSgneQF6dO-b4Zt94tVfdzB4aaRwHDjUKVlPxqoU881U0mbpkVAoTbxRRvL2yNiK76u_KeNshTcAmYwMO58upOlOb57Lwx8UXRpnIkZakJOn0qPptQlIBw4_82_raky2ME6UTP-iwJ7SNDVTA.aXtr3Jz5Tde-fsHo2E0FvauDoIxh_tWmVq9LkHQrJM0&dib_tag=AUTHOR" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="book-item">
+        <img src="img/esv-expository-hebrews-revelation.png" alt="Book 3">
+        <div class="book-content">
+          <h3>ESV Expository Commentary, Volume 12: Hebrews–Revelation</h3>
+          <p>Designed to strengthen the global church with a widely accessible, theologically sound, and pastorally wise 
+            resource for understanding and applying the overarching storyline of the Bible, this commentary series features 
+            the full text of the ESV Bible passage by passage, with crisp and theologically rich exposition and application. 
+            Editors Iain M. Duguid, James M. Hamilton, and Jay A. Sklar have gathered a team of experienced pastor-theologians 
+            to provide a new generation of pastors and other teachers of the Bible around the world with a globally minded commentary 
+            series rich in biblical theology and broadly Reformed doctrine, making the message of redemption found in all of Scripture 
+            clear and available to all.
+
+            Six experienced Bible teachers walk through some of the richest but more challenging books of the New Testament,
+             helping Bible readers understand what they say about Christians’ hope for the future.
+            
+            Contributors include:
+            Dennis E. Johnson
+            Robert L. Plummer
+            C. Samuel Storms
+            Ray Van Neste
+            Matthew S. Harmon
+            Thomas R. Schreiner</p>
+          <a href="https://www.amazon.com/ESV-Expository-Commentary-12-Hebrews-Revelation-ebook/dp/B0D54NS6Z3?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.6R4LdHY2K-dIzQf9Qjk3zMNwD1-p7-v-62mqXDKWC5cCGE6QfzRw-jei6dgzSy0iqWLCrxSgneQF6dO-b4Zt94tVfdzB4aaRwHDjUKVlPxqoU881U0mbpkVAoTbxRRvL2yNiK76u_KeNshTcAmYwMO58upOlOb57Lwx8UXRpnIkZakJOn0qPptQlIBw4_82_raky2ME6UTP-iwJ7SNDVTA.aXtr3Jz5Tde-fsHo2E0FvauDoIxh_tWmVq9LkHQrJM0&dib_tag=AUTHOR" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="book-item">
+        <img src="img/asking-the-right-questions.jpg" alt="asking-the-right-questions">
+        <div class="book-content">
+          <h3>Asking The Right Questions</h3>
+          <p>We all know that we should read our Bibles—yet at times we struggle with knowing exactly how, no matter 
+            how long we’ve followed Jesus. In this empowering book, Professor Matthew Harmon walks us through two simple 
+            sets of questions to ask every time we open our Bibles:
+
+            Understanding the Bible:
+            1. What do we learn about God? 
+            2. What do we learn about people? 
+            3. What do we learn about relating to God? 
+            4. What do we learn about relating to others?
+            
+            Applying the Bible:
+            1. What does God want me to understand? 
+            2. What does God want me to believe? 
+            3. What does God want me to desire? 
+            4. What does God want me to do?
+            
+            Arming you with practical ways to get to the heart of any passage, this book will help position you to experience the joy that results from being transformed by God’s Word.</p>
+          <a href="https://www.amazon.com/Asking-Right-Questions-Practical-Understanding-ebook/dp/B01N7SV3SS?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.6R4LdHY2K-dIzQf9Qjk3zMNwD1-p7-v-62mqXDKWC5cCGE6QfzRw-jei6dgzSy0iqWLCrxSgneQF6dO-b4Zt94tVfdzB4aaRwHDjUKVlPxqoU881U0mbpkVAoTbxRRvL2yNiK76u_KeNshTcAmYwMO58upOlOb57Lwx8UXRpnIkZakJOn0qPptQlIBw4_82_raky2ME6UTP-iwJ7SNDVTA.aXtr3Jz5Tde-fsHo2E0FvauDoIxh_tWmVq9LkHQrJM0&dib_tag=AUTHOR" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 5 -->
+      <div class="book-item">
+        <img src="img/jeremiah-12-week.jpeg" alt="jeremiah-12-week">
+        <div class="book-content">
+          <h3>Jeremiah: A 12-Week Study (Knowing the Bible)</h3>
+          <p>The Knowing the Bible series is a resource designed to help Bible readers better understand and apply God’s Word. 
+            These 12-week studies lead participants through books of the Bible and are made up of four basic components: (1) 
+            reflection questions help readers engage the text at a deeper level; (2) “Gospel Glimpses” highlight the gospel of 
+            grace throughout the book; (3) “Whole-Bible Connections” show how any given passage connects to the Bible’s overarching
+             story of redemption, culminating in Christ; and (4) “Theological Soundings” identify how historic orthodox doctrines are
+              taught or reinforced throughout Scripture. With contributions from an array of influential pastors and church leaders,
+               these gospel-centered studies will help Christians see and cherish the message of God’s grace on every page of the Bible.
+
+            Appointed to be a prophet before he was born, Jeremiah faithfully preached God’s Word in the face of confusion, 
+            opposition, and persecution. When instructed, he brought the message of God’s righteous judgment against sin to the nation 
+            of Israel, but not without reminding them of God’s covenant faithfulness. In this 12-week study, Matthew Harmon highlights 
+            key biblical themes, clarifies crucial doctrines, and draws personal applications from the book of Jeremiah—reminding us of 
+            the truth that God’s proclamation of judgment is always intended to spur his people to seek salvation in and through him.</p>
+          <a href="https://www.amazon.com/Jeremiah-12-Week-Study-Knowing-Bible-ebook/dp/B01BU6F75K?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.6R4LdHY2K-dIzQf9Qjk3zMNwD1-p7-v-62mqXDKWC5cCGE6QfzRw-jei6dgzSy0iqWLCrxSgneQF6dO-b4Zt94tVfdzB4aaRwHDjUKVlPxqoU881U0mbpkVAoTbxRRvL2yNiK76u_KeNshTcAmYwMO58upOlOb57Lwx8UXRpnIkZakJOn0qPptQlIBw4_82_raky2ME6UTP-iwJ7SNDVTA.aXtr3Jz5Tde-fsHo2E0FvauDoIxh_tWmVq9LkHQrJM0&dib_tag=AUTHOR" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 6 -->
+      <div class="book-item">
+        <img src="img/making-all-things-new.jpg" alt="making-all-things-new">
+        <div class="book-content">
+          <h3>Making All Things New</h3>
+          <p>Many people think eschatology refers to events occurring at the end of history. In this book, 
+            two scholars with expertise in biblical eschatology argue that God's kingdom breaking into this world 
+            through Jesus Christ has inaugurated a new creation, a reality that should shape pastoral leadership and 
+            be reflected in the life and ministry of the church. Brief and accessibly written, this book articulates the 
+            practical implications of G. K. Beale's New Testament Biblical Theology and features an introductory chapter by Beale.
+             Each chapter concludes with practical suggestions and a list of books for further study.</p>
+          <a href="https://www.amazon.com/Making-All-Things-New-Inaugurated-ebook/dp/B012H10EBY?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.6R4LdHY2K-dIzQf9Qjk3zMNwD1-p7-v-62mqXDKWC5cCGE6QfzRw-jei6dgzSy0iqWLCrxSgneQF6dO-b4Zt94tVfdzB4aaRwHDjUKVlPxqoU881U0mbpkVAoTbxRRvL2yNiK76u_KeNshTcAmYwMO58upOlOb57Lwx8UXRpnIkZakJOn0qPptQlIBw4_82_raky2ME6UTP-iwJ7SNDVTA.aXtr3Jz5Tde-fsHo2E0FvauDoIxh_tWmVq9LkHQrJM0&dib_tag=AUTHOR" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 7 -->
+      <div class="book-item">
+        <img src="img/studies-in-pauline-epistles.jpg" alt="studies-in-pauline-epistles">
+        <div class="book-content">
+          <h3>Studies In The Pauline Epistles</h3>
+          <p>A must-have for any serious Pauline scholar or student, this Festschrift to Douglas J. Moo is unique in several ways. 
+            Since Doug has been a key proponent to the Old Perspective on Paul, the reader will be interested in reading the essay 
+            by N. T. Wright in which he reflects on the phrase “the righteousness of God” in Romans 3. And where else can you read 
+            an essay by James D. G. Dunn on “What’s Good about the Old Perspective on Paul” and by Stephen Westerholm on “What’s Right
+            about the New Perspective on Paul”?
+
+            Since one of Doug Moo’s roles is as chairman of the Committee on Bible Translation (which oversees the NIV translation),
+             several authors offer arguments for modifications to the NIV for the committee to consider. Interestingly, Jonathan A. Moo,
+              Doug’s son, who is following in his father’s footsteps as a biblical scholar, does a careful analysis of Paul’s reflections 
+              on himself as the father of those whom he has led to Christ.</p>
+          <a href="https://www.amazon.com/Studies-Pauline-Epistles-Essays-Douglas/dp/031049480X?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.6R4LdHY2K-dIzQf9Qjk3zMNwD1-p7-v-62mqXDKWC5cCGE6QfzRw-jei6dgzSy0iqWLCrxSgneQF6dO-b4Zt94tVfdzB4aaRwHDjUKVlPxqoU881U0mbpkVAoTbxRRvL2yNiK76u_KeNshTcAmYwMO58upOlOb57Lwx8UXRpnIkZakJOn0qPptQlIBw4_82_raky2ME6UTP-iwJ7SNDVTA.aXtr3Jz5Tde-fsHo2E0FvauDoIxh_tWmVq9LkHQrJM0&dib_tag=AUTHOR" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 8 -->
+      <div class="book-item">
+        <img src="img/from-heaven-he-came.jpg" alt="from-heaven-he-came">
+        <div class="book-content">
+          <h3>From Heaven He Came and Sought Her: Definite Atonement in Historical, Biblical, Theological, and Pastoral Perspective</h3>
+          <p>There is a palpable sense of confusion—and sometimes even embarrassment—with regard to so-called limited atonement today, 
+            pointing to the need for thoughtful engagement with this controversial doctrine. Incorporating contributions from a host of 
+            respected theologians, From Heaven He Came and Sought Her stands as the first comprehensive resource on definite atonement as
+            it examines the issue from historical, biblical, theological, and pastoral perspectives.
+            Offering scholarly insights for those seeking a thorough and well-researched discussion, this book will encourage charitable 
+            conversations as it winsomely defends this foundational tenet of Reformed theology.
+            
+            *The epub edition of this title will not display correctly when viewed on Adobe Digital Editions. Hebrew characters will
+             be inaccurately displayed in this reader.</p>
+          <a href="https://www.amazon.com/Heaven-Came-Sought-Her-Theological-ebook/dp/B00GO9AJWA?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.6R4LdHY2K-dIzQf9Qjk3zMNwD1-p7-v-62mqXDKWC5cCGE6QfzRw-jei6dgzSy0iqWLCrxSgneQF6dO-b4Zt94tVfdzB4aaRwHDjUKVlPxqoU881U0mbpkVAoTbxRRvL2yNiK76u_KeNshTcAmYwMO58upOlOb57Lwx8UXRpnIkZakJOn0qPptQlIBw4_82_raky2ME6UTP-iwJ7SNDVTA.aXtr3Jz5Tde-fsHo2E0FvauDoIxh_tWmVq9LkHQrJM0&dib_tag=AUTHOR" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <!-- Book 9 -->
+      <!-- <div class="book-item">
+        <img src="img/book3.jpg" alt="Book 3">
+        <div class="book-content">
+          <h3>Title of Book 3</h3>
+          <p>Short description of the book goes here. Highlight its main focus or value.</p>
+          <a href="https://www.amazon.com" target="_blank">Buy on Amazon</a>
+        </div>
+      </div> -->
+
+
+      <!-- Add more books as needed -->
+    </div>
+  </div>
+</body>
+</html>
