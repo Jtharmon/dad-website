@@ -18,6 +18,53 @@
     <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 0; margin-right: auto;">
       <img src="/img/dad-logo.png" alt="Logo" style="height: 40px;">
     </a>
+    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="display: flex; align-items: center;">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PODCASTS</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BOOKS</a>
+      <a href="#articles" class="w3-bar-item w3-button">ARTICLES</a>
+      <a href="#sermons" class="w3-bar-item w3-button"><i class="fa fa-book"></i> SERMONS</a>
+    </div>
+    
+    <!-- Menu button for mobile view -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+    <!-- Sidebar (Hidden by default) -->
+    <nav id="mySidebar" class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-large" 
+         style="display: none; position: fixed; top: 0; width: 250px; height: 100%;">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-large" onclick="w3_close()">×</a>
+      <a href="#about" class="w3-bar-item w3-button" onclick="w3_close()">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-user"></i> PODCASTS</a>
+      <a href="#work" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-th"></i> BOOKS</a>
+      <a href="#articles" class="w3-bar-item w3-button" onclick="w3_close()">ARTICLES</a>
+      <a href="#sermons" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-book"></i> SERMONS</a>
+    </nav>
+
+    <!-- Menu Button for Mobile View -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<script>
+// Open the sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+// Close the sidebar
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>    
+</a>
 
     <!-- Sidebar (Hidden by default) -->
     <nav id="mySidebar" class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-large" 
