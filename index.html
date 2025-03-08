@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
   </head>
 <body>
 
@@ -17,30 +18,38 @@
     <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 0; margin-right: auto;">
       <img src="/img/dad-logo.png" alt="Logo" style="height: 40px;">
     </a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small" style="display: flex; align-items: center;">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PODCASTS</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BOOKS</a>
-      <a href="#articles" class="w3-bar-item w3-button">ARTICLES</a>
-      <a href="#sermons" class="w3-bar-item w3-button"><i class="fa fa-book"></i> SERMONS</a>
-    </div>
+
+    <!-- Sidebar (Hidden by default) -->
+    <nav id="mySidebar" class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-large" 
+         style="display: none; position: fixed; top: 0; width: 250px; height: 100%;">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-large" onclick="w3_close()">×</a>
+      <a href="#about" class="w3-bar-item w3-button" onclick="w3_close()">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-user"></i> PODCASTS</a>
+      <a href="#work" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-th"></i> BOOKS</a>
+      <a href="#articles" class="w3-bar-item w3-button" onclick="w3_close()">ARTICLES</a>
+      <a href="#sermons" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-book"></i> SERMONS</a>
+    </nav>
+
+    <!-- Menu Button for Mobile View -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<!-- Right-sided navbar links -->
-<div class="w3-right w3-hide-small" style="display: flex; align-items: center;">
-  <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PODCASTS</a>
-  <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BOOKS</a>
-  <a href="#articles" class="w3-bar-item w3-button">ARTICLES</a> 
-  <a href="#sermons" class="w3-bar-item w3-button"><i class="fa fa-book"></i> SERMONS</a>
-</div>
+<script>
+// Open the sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
 
+// Close the sidebar
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<!-- Sidebar on small screens when clicking the menu icon
 <!-- Header with full-height image -->
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="background-image: url('img/dad-preaching.jpg'); height: 100vh; background-size: cover; background-position: center;">
@@ -189,7 +198,7 @@
 </div>
 
 <!-- Sermons Section -->
-<div class="w3-container" style="padding:64px 16px" id="sermons">
+<div class="w3-container" style="padding: 100pxpx 16px" id="sermons">
   <h3 class="w3-center">My Sermons</h3>
   <p class="w3-center w3-large">Preaching God's Word with clarity and conviction.</p>
   <div class="sermons-grid">
@@ -199,11 +208,19 @@
       </a>
       <h3>God Made A Promise</h3>
       <p>Galatians 3:15-29</p>
-      <p>In the sermon "God Made a Promise," delivered on February 23, 2025, at Grace Polaris Church, the speaker examines 
-        Galatians 3:15–29, emphasizing that God's covenant with Abraham, established by promise, is fulfilled in Christ. 
-        This fulfillment grants believers freedom from the law and unites them as heirs according to the promise</p>
+      <p>God shows the priority of the promise over the law by showing four things the law cannot do: 
+        (1) it cannot not nullify God’s promise; (2) it rescue us from our sin; (3) it cannot give us 
+        eternal life; and (4) it cannot make us sons of God. 
+      </p>
     </div>
     <div class="sermon-item">
+      <a href="https://www.youtube.com/live/QwaYaFUyLko?si=JwamJuiYb-vJYp0M&t=913" target="_blank">
+        <img src="img/Grace logo.jpeg" alt="Humility Reigns">
+      </a>
+      <h3>Humility Reigns</h3>
+      <p>Series on 1 & 2 Samuel</p>
+      <p>A deep dive into the book of 1 & 2 Samuel, exploring its profound theological truths.</p>
+    </div>    <div class="sermon-item">
       <a href="https://youtu.be/o_qGBV9dO-g?si=bgkugiaE2nJRDpex" target="_blank">
         <img src="img/unshakeable-joy.jpeg" alt="Unshakable Joy">
       </a>
@@ -211,19 +228,11 @@
       <p>Lessons from the Philippians</p>
       <p>A practical look at how faith is lived out in our daily walk, based on the teachings in Philippians.</p>
     </div>
-    <div class="sermon-item">
-      <a href="https://www.christscovenant.org/sermons/whose-name-will-it-be" target="_blank">
-        <img src="img/whose-name-will-it-be.jpeg" alt="Whose Name Will It Be">
-      </a>
-      <h3>Whose Name Will It Be</h3>
-      <p>Understanding Genesis</p>
-      <p>Exploring the richness of Genesis and its application to our daily life.</p>
-    </div>
-  </div>
   <!-- Button for More Sermons -->
-  <div class="w3-center" style="margin-top: 64px; margin-bottom: 64px;">
-    <a href="more-sermons.html" class="w3-button w3-light-grey" style="padding: 16px 32px; font-size: 18px;">Click Here to See More Sermons!</a>
-  </div>
+<!-- Center the button properly -->
+<div class="w3-center" style="width: 100%; display: flex; justify-content: center; margin-top: 64px; margin-bottom: 64px;">
+  <a href="more-sermons.html" class="w3-button w3-light-grey" style="padding: 16px 32px; font-size: 18px;">Click Here to See More Sermons!</a>
+</div>
 </div>
 
       <!-- <div class="w3-col l4 m6 w3-margin-bottom">
