@@ -316,9 +316,10 @@ body {
 .articles-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Ensures even spacing */
   gap: 32px;
 }
+
 
 .article-item {
   background-color: #fff;
